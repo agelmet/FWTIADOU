@@ -1,0 +1,9 @@
+{
+  "name": "mermade-site",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.0",
+    "@netlify/functions": "^6.1.0"
+  }
+}

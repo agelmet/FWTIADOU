@@ -1,0 +1,514 @@
+{
+ "v": 1,
+ "updated": "2026-11-25T19:00:00Z",
+ "settings": {
+  "phone": "+30 693 275 0467",
+  "email": "themermade@yahoo.com",
+  "instagram": "",
+  "facebook": "",
+  "music": true,
+  "musicSrc": "assets/audio/mermade-ambient.mp3",
+  "domain": ""
+ },
+ "t": {
+  "meta.home.title": {
+   "el": ".mer(made). | Συνεδρίες επανασύνδεσης με τον εαυτό",
+   "en": ".mer(made). | Sessions to reconnect with yourself"
+  },
+  "meta.home.desc": {
+   "el": "Κάτω από όλα όσα έμαθες να είσαι, υπάρχει αυτό που πάντα ήσουν. Προσωπικές συνεδρίες coaching από το .mer(made). για να συναντήσεις ξανά τον εαυτό σου.",
+   "en": "Beneath everything you learned to be, there is who you always were. Personal coaching sessions by .mer(made). to meet yourself again."
+  },
+  "meta.sessions.title": {
+   "el": "Οι συνεδρίες | .mer(made). — Be you again",
+   "en": "The sessions | .mer(made). — Be you again"
+  },
+  "meta.sessions.desc": {
+   "el": "Τρία μονοπάτια επανασύνδεσης: ατομική σύνδεση, η επαγγελματική σου ιστορία και σειρά συνεδριών. Με ησυχία, σεβασμό, πειθαρχία και αγάπη.",
+   "en": "Three pathways to reconnect: one on one connection, telling your professional story, and a series of sessions. With calm, respect, discipline and love."
+  },
+  "meta.blog.title": {
+   "el": "Ημερολόγιο | .mer(made). — σκέψεις, αναστοχασμός, εξέλιξη",
+   "en": "Journal | .mer(made). — reflections and growth"
+  },
+  "meta.blog.desc": {
+   "el": "Κείμενα του .mer(made). για την αυτογνωσία, τον αναστοχασμό και την επιστροφή στον αυθεντικό εαυτό.",
+   "en": "Writing by .mer(made). on self-awareness, reflection and returning to your authentic self."
+  },
+  "nav.home": {
+   "el": "Αρχική",
+   "en": "Home"
+  },
+  "nav.sessions": {
+   "el": "Συνεδρίες",
+   "en": "Sessions"
+  },
+  "nav.blog": {
+   "el": "Blog",
+   "en": "Blog"
+  },
+  "ui.contact": {
+   "el": "Επικοινωνία",
+   "en": "Contact"
+  },
+  "ui.call": {
+   "el": "Τηλεφώνησέ μου",
+   "en": "Call me"
+  },
+  "ui.mail": {
+   "el": "Στείλε μου email",
+   "en": "Email me"
+  },
+  "ui.cardtitle": {
+   "el": "Ας μιλήσουμε",
+   "en": "Let’s talk"
+  },
+  "ui.cardnote": {
+   "el": "Γράψε μου ή τηλεφώνησέ μου — θα σου απαντήσω προσωπικά.",
+   "en": "Write to me or call me — I will answer personally."
+  },
+  "ui.music": {
+   "el": "Μουσική",
+   "en": "Music"
+  },
+  "h.kick": {
+   "el": "Μια επιστροφή στον εαυτό",
+   "en": "A return to self"
+  },
+  "h.title": {
+   "el": "Γύρνα σε αυτό <em>που είσαι</em>",
+   "en": "Come back to <em>who you are</em>"
+  },
+  "h.lead": {
+   "el": "Κάτω από όλα όσα έμαθες να είσαι, υπάρχει αυτό που πάντα ήσουν. Ένας χώρος για να σε συναντήσεις ξανά.",
+   "en": "Beneath everything you learned to be, there is who you always were. A space to meet yourself again."
+  },
+  "h.cta1": {
+   "el": "Ανακάλυψε τις συνεδρίες",
+   "en": "Discover the sessions"
+  },
+  "h.cta2": {
+   "el": "Επικοινωνία",
+   "en": "Get in touch"
+  },
+  "i.label": {
+   "el": "Η πρόθεση",
+   "en": "The Intention"
+  },
+  "i.title": {
+   "el": "Δεν γεννήθηκες για να γίνεις <em>κάποιος άλλος</em>",
+   "en": "You were never meant to become <em>someone else</em>"
+  },
+  "i.text": {
+   "el": "Ίσως δεν χρειάζεται να γίνεις κάτι περισσότερο. Ίσως χρειάζεται να επιστρέψεις σε αυτό που είσαι, πέρα από τους ρόλους, τις προσδοκίες και όσα έμαθες να πιστεύεις για τον εαυτό σου.",
+   "en": "Perhaps you don’t need to become anything more. Perhaps you need to return to who you are, beyond roles, expectations and everything you learned to believe about yourself."
+  },
+  "s.label": {
+   "el": "Οι συνεδρίες",
+   "en": "The Sessions"
+  },
+  "s.title": {
+   "el": "Ένας χώρος <em>για να επανασυνδεθείς</em>",
+   "en": "A space <em>to reconnect</em>"
+  },
+  "s.text": {
+   "el": "Μέσα από προσωπικές συνεδρίες, δημιουργούμε χώρο για παρατήρηση, ουσιαστική σύνδεση και μια πιο συνειδητή σχέση με τον εαυτό.",
+   "en": "Through personal sessions, we create space for observation, meaningful connection and a more conscious relationship with yourself."
+  },
+  "s.quote": {
+   "el": "Ίσως ήρθε η ώρα να συναντήσεις ξανά τον εαυτό σου",
+   "en": "Perhaps it’s time to meet yourself again"
+  },
+  "s.cta": {
+   "el": "Ανακάλυψε τις συνεδρίες .mer(made).",
+   "en": "Discover the .mer(made). sessions"
+  },
+  "b.kick": {
+   "el": "Ο στόχος των συνεδριών",
+   "en": "What the sessions are for"
+  },
+  "b.title": {
+   "el": "Be you <em>again.</em>",
+   "en": "Be you <em>again.</em>"
+  },
+  "b.text": {
+   "el": "Μια καθοδήγηση για να ορίσουμε καθαρά πού είμαστε τώρα, πού θέλουμε να πάμε και τελικά ποια διαδρομή θα ακολουθήσουμε προκειμένου να επιτευχθεί ο στόχος.",
+   "en": "Guidance to define clearly where we are now, where we want to go, and finally which path we will follow to reach the goal."
+  },
+  "b.v1": {
+   "el": "Ησυχία",
+   "en": "Calm"
+  },
+  "b.v2": {
+   "el": "Σεβασμός",
+   "en": "Respect"
+  },
+  "b.v3": {
+   "el": "Πειθαρχία",
+   "en": "Discipline"
+  },
+  "b.v4": {
+   "el": "Αγάπη",
+   "en": "Love"
+  },
+  "c.label": {
+   "el": "Επικοινωνία",
+   "en": "Contact"
+  },
+  "c.title": {
+   "el": "Πες μου πώς μπορώ να σε <em>συνοδεύσω</em> στη διαδρομή σου.",
+   "en": "Please let me know how I can help you <em>on your journey.</em>"
+  },
+  "c.text": {
+   "el": "Γράψε μου λίγα λόγια για το πού βρίσκεσαι τώρα και τι αναζητάς. Θα σου απαντήσω προσωπικά.",
+   "en": "Write me a few words about where you are now and what you are looking for. I will answer you personally."
+  },
+  "j.label": {
+   "el": "Ημερολόγιο",
+   "en": "Journal"
+  },
+  "j.title": {
+   "el": "Σκέψεις για την <em>επιστροφή στον εαυτό</em>",
+   "en": "Reflections on <em>returning to yourself</em>"
+  },
+  "j.all": {
+   "el": "Όλα τα άρθρα",
+   "en": "All posts"
+  },
+  "j.read": {
+   "el": "Διάβασε",
+   "en": "Read"
+  },
+  "f.tag": {
+   "el": "Μια επιστροφή στον αυθεντικό σου εαυτό.",
+   "en": "A return to your authentic self."
+  },
+  "f.rights": {
+   "el": "Με την επιφύλαξη παντός δικαιώματος.",
+   "en": "All rights reserved."
+  },
+  "f.privacy": {
+   "el": "Απόρρητο",
+   "en": "Privacy"
+  },
+  "sp.kick": {
+   "el": "Συνδέομαι · Νιώθω · Γίνομαι",
+   "en": "Connecting · Feeling · Becoming"
+  },
+  "sp.title": {
+   "el": "Ποιος είσαι όταν σταματάς να προσπαθείς να είσαι <em>κάποιος που δεν είσαι;</em>",
+   "en": "Who are you when you stop trying to be <em>someone you are not?</em>"
+  },
+  "sp.intro": {
+   "el": "Τα sessions έχουν ως στόχο το Be You Again. Κάτω από όλα όσα έμαθες να είσαι, υπάρχει αυτό που πάντα ήσουν. Ένας χώρος για να σε συναντήσεις ξανά είναι αυτές οι συνεδρίες. Μια καθοδήγηση για να ορίσουμε καθαρά πού είμαστε τώρα, πού θέλουμε να πάμε και τελικά ποια διαδρομή θα ακολουθήσουμε προκειμένου να επιτευχθεί ο στόχος. Με ησυχία, σεβασμό, πειθαρχία και αγάπη.",
+   "en": "The sessions aim at one thing: Be You Again. Beneath everything you learned to be, there is who you always were. These sessions are a space to meet yourself again — guidance to define clearly where we are now, where we want to go, and finally which path we will follow to reach the goal. With calm, respect, discipline and love."
+  },
+  "sp.paths": {
+   "el": "Τρία μονοπάτια",
+   "en": "Three pathways"
+  },
+  "x1.en": {
+   "el": "One on One Connection",
+   "en": "One on One Connection"
+  },
+  "x1.title": {
+   "el": "Ατομική σύνδεση",
+   "en": "One on One Connection"
+  },
+  "x1.lead": {
+   "el": "Ένας χώρος για να επανασυνδεθείς με τον εαυτό σου και να βρεις τον δρόμο σου.",
+   "en": "A space to reconnect with yourself and find your way forward."
+  },
+  "x1.text": {
+   "el": "Μερικές φορές, το μόνο που χρειαζόμαστε είναι λίγος χώρος για να σταθούμε, να ακούσουμε μέσα μας και να ξαναβρούμε όσα πραγματικά μετράνε. Μέσα από ατομικές συνεδρίες coaching, σου προσφέρεται ένας υποστηρικτικός και τρυφερός χώρος για να εξερευνήσεις τα συναισθήματά σου, να επανασυνδεθείς με τις αξίες σου, να αποκτήσεις καθαρότητα για τις προκλήσεις που αντιμετωπίζεις και να ευθυγραμμιστείς με την κατεύθυνση που θέλεις να πάρεις. Μαζί, ξετυλίγουμε απαλά ό,τι μοιάζει αβέβαιο, ανακαλύπτουμε νέες οπτικές και βρίσκουμε νόημα.",
+   "en": "Sometimes, all we need is a little space to pause, listen inward, and rediscover what truly matters. Through individual coaching sessions, you are offered a supportive and compassionate space to explore your emotions, reconnect with your values, gain clarity around the challenges you face, and realign with the direction you wish to take. Together, we gently untangle what feels uncertain, uncover new perspectives, and identify meaning."
+  },
+  "x1.close": {
+   "el": "Μια παύση. Μια ματιά προς τα μέσα. Ένας δρόμος μπροστά.",
+   "en": "A pause. A look inward. A way forward."
+  },
+  "x2.en": {
+   "el": "Tell Your Story",
+   "en": "Tell Your Story"
+  },
+  "x2.title": {
+   "el": "Πες την ιστορία σου",
+   "en": "Tell Your Story"
+  },
+  "x2.lead": {
+   "el": "Η εμπειρία σου, ειπωμένη με ειλικρίνεια. Το επόμενο κεφάλαιο, σε απόσταση αναπνοής.",
+   "en": "Your experience, honestly told. Your next chapter, within reach."
+  },
+  "x2.text": {
+   "el": "Το βιογραφικό σου είναι κάτι περισσότερο από μια καταγραφή του πού έχεις βρεθεί· είναι μια αντανάκλαση του ποιος είσαι, τι φέρνεις μαζί σου και πού ελπίζεις να πας. Μαζί, ξαναδίνουμε μορφή στην επαγγελματική σου ιστορία, ώστε να νιώθεις ότι είναι αυθεντικά δική σου, να τιμά τη διαδρομή σου και να φέρνει στο προσκήνιο τις δυνάμεις σου — ανοίγοντας πόρτες σε ευκαιρίες, χώρους εργασίας και δυνατότητες όπου μπορείς πραγματικά να δεις τον εαυτό σου να ανήκει. Γιατί το σωστό επόμενο βήμα ξεκινά όταν σε βλέπουν.",
+   "en": "Your resume is more than a record of where you’ve been; it’s a reflection of who you are, what you bring, and where you hope to go. Together, we reshape your professional story into one that feels authentic to you, honours your journey, and brings your strengths into focus — opening doors to opportunities, workplaces, and possibilities where you can truly see yourself belonging. Because the right next step begins with being seen."
+  },
+  "x2.close": {
+   "el": "Η ιστορία σου, ειπωμένη με πρόθεση. Το επόμενο κεφάλαιο, έτοιμο να ξεδιπλωθεί.",
+   "en": "Your story, told with intention. Your next chapter, waiting to unfold."
+  },
+  "x3.en": {
+   "el": "Multi-Session Connection",
+   "en": "Multi-Session Connection"
+  },
+  "x3.title": {
+   "el": "Σύνδεση σε βάθος χρόνου",
+   "en": "Multi-Session Connection"
+  },
+  "x3.lead": {
+   "el": "Μια βαθύτερη σύνδεση με τον εαυτό σου, μία συνεδρία τη φορά.",
+   "en": "A deeper connection with yourself, one session at a time."
+  },
+  "x3.text": {
+   "el": "Η ουσιαστική αλλαγή ξεκινά από την προθυμία να στραφείς προς τα μέσα, να καταλάβεις πιο βαθιά τον εαυτό σου και να δημιουργήσεις χώρο για ουσιαστική εξέλιξη. Μέσα από μια σειρά συνεδριών, έχεις σταθερή και προσεκτική υποστήριξη καθώς επανασυνδέεσαι με τον εαυτό σου, εξερευνάς τον τρόπο που σκέφτεσαι, εμβαθύνεις στη συναισθηματική σου επίγνωση, θέτεις πιο υγιή όρια και παίρνεις αποφάσεις που ταιριάζουν με το ποιος είσαι και τη ζωή που θέλεις να δημιουργήσεις.",
+   "en": "Lasting change begins with the willingness to turn inward, understand yourself more deeply, and create space for meaningful growth. Through a series of dedicated sessions, you receive ongoing, thoughtful support as you reconnect with yourself, explore your mindset, deepen your emotional awareness, establish healthier boundaries, and make decisions that feel aligned with who you are and the life you wish to create."
+  },
+  "x3.close": {
+   "el": "Μεγαλύτερη επίγνωση. Πιο υγιή όρια. Ένας πιο ευθυγραμμισμένος εαυτός.",
+   "en": "Greater awareness. Healthier boundaries. A more aligned you."
+  },
+  "x.cta": {
+   "el": "Με ενδιαφέρει",
+   "en": "I’m interested"
+  },
+  "hc.title": {
+   "el": "Πώς <em>συνδεόμαστε</em>",
+   "en": "How <em>to connect</em>"
+  },
+  "hc.text": {
+   "el": "Διάλεξε το μονοπάτι που σε ενδιαφέρει και πες μου πώς μπορώ να σε στηρίξω.",
+   "en": "Let me know which pathway you’re interested in and how I can support you."
+  },
+  "hc.name": {
+   "el": "Το όνομά σου",
+   "en": "Your name"
+  },
+  "hc.msg": {
+   "el": "Λίγα λόγια για σένα (προαιρετικά)",
+   "en": "A few words about you (optional)"
+  },
+  "hc.send": {
+   "el": "Στείλε email",
+   "en": "Send email"
+  },
+  "hc.note": {
+   "el": "Το μήνυμα ανοίγει στο πρόγραμμα email σου — τίποτα δεν αποθηκεύεται σε αυτή τη σελίδα.",
+   "en": "The message opens in your email app — nothing is stored on this page."
+  },
+  "hc.any": {
+   "el": "Δεν είμαι σίγουρος/η ακόμα",
+   "en": "I’m not sure yet"
+  },
+  "bp.kick": {
+   "el": "Ημερολόγιο · Σκέψεις · Εξέλιξη",
+   "en": "Journal · Reflections · Growth"
+  },
+  "bp.title": {
+   "el": "Λέξεις για την <em>επιστροφή</em>",
+   "en": "Words for <em>the return</em>"
+  },
+  "bp.lead": {
+   "el": "Μικρά κείμενα για την αυτογνωσία, τον αναστοχασμό και τα βήματα που μας φέρνουν πιο κοντά στον εαυτό μας.",
+   "en": "Short writings on self-awareness, reflection and the steps that bring us closer to ourselves."
+  },
+  "bp.empty": {
+   "el": "Τα πρώτα κείμενα έρχονται σύντομα.",
+   "en": "The first writings are coming soon."
+  },
+  "po.back": {
+   "el": "Όλα τα άρθρα",
+   "en": "All posts"
+  },
+  "po.min": {
+   "el": "λεπτά ανάγνωσης",
+   "en": "min read"
+  },
+  "po.share": {
+   "el": "Μοιράσου το",
+   "en": "Share"
+  },
+  "po.next": {
+   "el": "Επόμενο κείμενο",
+   "en": "Next post"
+  },
+  "po.cta": {
+   "el": "Θέλεις να το συζητήσουμε;",
+   "en": "Would you like to talk about it?"
+  }
+ },
+ "img": {
+  "home-hero": {
+   "src": "assets/img/mermade-be-you-again-vazo-2048.webp",
+   "srcset": [
+    [
+     960,
+     "assets/img/mermade-be-you-again-vazo-960.webp"
+    ],
+    [
+     1600,
+     "assets/img/mermade-be-you-again-vazo-1600.webp"
+    ],
+    [
+     2048,
+     "assets/img/mermade-be-you-again-vazo-2048.webp"
+    ]
+   ],
+   "w": 2048,
+   "h": 1536,
+   "alt": {
+    "el": "Λευκό κεραμικό βάζο σε ξύλινο ράφι, σε ζεστό ανοιχτόχρωμο τοίχο",
+    "en": "White ceramic vase on a wooden shelf against a warm light wall"
+   }
+  },
+  "home-intention": {
+   "src": "assets/img/mermade-fos-kourtina-1000.webp",
+   "srcset": [
+    [
+     640,
+     "assets/img/mermade-fos-kourtina-640.webp"
+    ],
+    [
+     1000,
+     "assets/img/mermade-fos-kourtina-1000.webp"
+    ]
+   ],
+   "w": 1000,
+   "h": 667,
+   "alt": {
+    "el": "Φυσικό φως που περνά μέσα από λινές κουρτίνες",
+    "en": "Natural light through linen curtains"
+   }
+  },
+  "home-sessions": {
+   "src": "assets/img/mermade-glypto-morfi-750.webp",
+   "srcset": [
+    [
+     750,
+     "assets/img/mermade-glypto-morfi-750.webp"
+    ]
+   ],
+   "w": 750,
+   "h": 750,
+   "alt": {
+    "el": "Γλυπτό από ζεστή πέτρα, μια μορφή σε ηρεμία",
+    "en": "Warm stone sculpture of a calm figure"
+   }
+  },
+  "home-contact": {
+   "src": "assets/img/mermade-fyllo-profil-1300.webp",
+   "srcset": [
+    [
+     800,
+     "assets/img/mermade-fyllo-profil-800.webp"
+    ],
+    [
+     1300,
+     "assets/img/mermade-fyllo-profil-1300.webp"
+    ]
+   ],
+   "w": 1500,
+   "h": 1500,
+   "alt": {
+    "el": "Γραμμικό σχέδιο προφίλ με κλαδί που φυτρώνει",
+    "en": "Line drawing of a profile with a growing branch"
+   }
+  },
+  "session-one": {
+   "src": "assets/img/mermade-synedria-elia-1000.webp",
+   "srcset": [
+    [
+     640,
+     "assets/img/mermade-synedria-elia-640.webp"
+    ],
+    [
+     1000,
+     "assets/img/mermade-synedria-elia-1000.webp"
+    ]
+   ],
+   "w": 1000,
+   "h": 1000,
+   "alt": {
+    "el": "Πήλινο βάζο με κλαδί ελιάς",
+    "en": "Clay vase with an olive branch"
+   }
+  },
+  "session-story": {
+   "src": "assets/img/mermade-istoria-imerologio-1536.webp",
+   "srcset": [
+    [
+     900,
+     "assets/img/mermade-istoria-imerologio-900.webp"
+    ],
+    [
+     1536,
+     "assets/img/mermade-istoria-imerologio-1536.webp"
+    ]
+   ],
+   "w": 1536,
+   "h": 1024,
+   "alt": {
+    "el": "Ανοιχτό ημερολόγιο με στυλό, κούπα και αποξηραμένα λουλούδια",
+    "en": "Open journal with a pen, a mug and dried flowers"
+   }
+  },
+  "session-multi": {
+   "src": "assets/img/mermade-glypto-pilos-1600.webp",
+   "srcset": [
+    [
+     900,
+     "assets/img/mermade-glypto-pilos-900.webp"
+    ],
+    [
+     1600,
+     "assets/img/mermade-glypto-pilos-1600.webp"
+    ]
+   ],
+   "w": 2500,
+   "h": 2500,
+   "alt": {
+    "el": "Γλυπτό από πηλό, δύο μορφές σε μία",
+    "en": "Clay sculpture of two forms becoming one"
+   }
+  },
+  "post-reconnecting": {
+   "src": "assets/img/mermade-monopati-dasos-1344.webp",
+   "srcset": [
+    [
+     800,
+     "assets/img/mermade-monopati-dasos-800.webp"
+    ],
+    [
+     1344,
+     "assets/img/mermade-monopati-dasos-1344.webp"
+    ]
+   ],
+   "w": 1344,
+   "h": 768,
+   "alt": {
+    "el": "Μονοπάτι μέσα σε φωτεινό δάσος",
+    "en": "A path through a sunlit forest"
+   }
+  }
+ },
+ "posts": [
+  {
+   "id": "p1",
+   "slug": "reconnecting-with-yourself",
+   "date": "2026-10-22",
+   "hidden": false,
+   "cover": "post-reconnecting",
+   "title": {
+    "el": "Επανασύνδεση με τον εαυτό: Καλώς ήρθες",
+    "en": "Reconnecting with Yourself: Welcome"
+   },
+   "excerpt": {
+    "el": "Σε έναν κόσμο που διεκδικεί συνεχώς την προσοχή μας, είναι εύκολο να χάσουμε από τα μάτια μας ποιοι πραγματικά είμαστε.",
+    "en": "In a world that constantly demands our attention and energy, it’s easy to lose sight of who we truly are."
+   },
+   "body": {
+    "el": "<p>Σε έναν κόσμο που διεκδικεί συνεχώς την προσοχή και την ενέργειά μας, είναι εύκολο να χάσουμε από τα μάτια μας ποιοι πραγματικά είμαστε. Πολλοί άνθρωποι νιώθουν αποσυνδεδεμένοι από τις αξίες, τα πάθη και τους στόχους τους. Αυτή η αποσύνδεση μπορεί να φέρει δυσαρέσκεια και σύγχυση για την κατεύθυνση της ζωής μας. Το .mer(made). προσφέρει ένα μονοπάτι επανασύνδεσης με τον εαυτό, για μια βαθύτερη κατανόηση των προσωπικών μας επιδιώξεων και των βημάτων που χρειάζονται για να τις πραγματώσουμε.</p>\n<p>Η πρόθεση και η προσέγγιση εδώ ξεκινούν από την αναγνώριση των περιοχών της ζωής σου που ζητούν αλλαγή και από συγκεκριμένα βήματα που ενισχύουν τη συνολική σου ευημερία. Η διαδρομή αυτή μπορεί να αγγίξει πολλές πλευρές — συναισθηματική, πνευματική και εσωτερική εξέλιξη. Εδώ είναι ένας χώρος όπου βρίσκεις τη στήριξη που χρειάζεσαι, μοιράζεσαι όσα θέλεις και μαζί δημιουργούμε την ευκαιρία να γνωρίσεις ό,τι για σένα είναι ακόμη άγνωστο.</p>\n<h2>Η σημασία του αναστοχασμού</h2>\n<p>Ο αναστοχασμός είναι κομβικό κομμάτι αυτής της διαδρομής. Μας επιτρέπει να εξετάσουμε τις σκέψεις, τα συναισθήματα και τις συμπεριφορές μας και οδηγεί σε μεγαλύτερη αυτογνωσία. Μερικά από τα βασικά του οφέλη:</p>\n<ul><li><strong>Περισσότερη καθαρότητα:</strong> όταν κατανοείς τα κίνητρα και τις επιθυμίες σου, οι στόχοι σου ξεκαθαρίζουν</li><li><strong>Καλύτερες αποφάσεις:</strong> ο αναστοχασμός πάνω σε όσα έζησες μπορεί να καθοδηγήσει τις επόμενες επιλογές σου</li><li><strong>Ρύθμιση των συναισθημάτων:</strong> όταν αναγνωρίζεις τι σε ενεργοποιεί συναισθηματικά, αντιδράς καλύτερα στις απαιτητικές στιγμές</li></ul>\n<h2>Σύνδεση, λοιπόν</h2>\n<p>Η επανασύνδεση με τον εαυτό σου μέσα από το .mer(made). είναι μια διαδρομή που μεταμορφώνει. Με τον αναστοχασμό, με εργαλεία coaching και με ένα υποστηρικτικό περιβάλλον, μπορείς να κινηθείς μέσα στις δυσκολίες της ζωής με καθαρότητα και σκοπό. Είναι μια συνεχής διαδικασία και κάθε βήμα σε φέρνει πιο κοντά στον αληθινό σου εαυτό.</p>\n<p>Καθώς ξεκινάς αυτή τη διαδρομή, οι επιλογές που κάνεις σήμερα σε οδηγούν σε αυτό που θα είσαι αύριο. Αγκάλιασε τη διαδρομή και ξανασυνδέσου με τον υπέροχο άνθρωπο που πάντα ήσουν.</p>",
+    "en": "<p>In a world that constantly demands our attention and energy, it’s easy to lose sight of who we truly are. Many people find themselves feeling disconnected from their own values, passions, and goals. This disconnection can lead to feelings of dissatisfaction and confusion about one’s life direction. .mer(made). offers a pathway to reconnect with oneself, fostering a deeper understanding of personal aspirations and the steps needed to achieve them.</p>\n<p>The intention and the approach here involves recognizing areas in your life that require change and taking actionable steps to enhance your overall well-being. This process can encompass various aspects, including emotional, intellectual, and spiritual development. Here is a place where you find the support you need, you share all your want and together we create the opportunity of introducing yourself to what to you is still unknown.</p>\n<h2>The Importance of Self-Reflection</h2>\n<p>Self-reflection is a critical component to this process. It allows individuals to assess their thoughts, feelings, and behaviors, leading to greater self-awareness. Here are some key benefits of self-reflection:</p>\n<ul><li><strong>Increased Clarity:</strong> Understanding your motivations and desires helps clarify your goals</li><li><strong>Enhanced Decision-Making:</strong> Reflecting on past experiences can guide future choices</li><li><strong>Emotional Regulation:</strong> Recognizing your emotional triggers can improve your response to demanding situations</li></ul>\n<h2>Connection It Is</h2>\n<p>Reconnecting with yourself through .mer(made). is a transformative journey. By engaging in self-reflection, utilizing coaching techniques, and building a supportive environment, you can navigate the complexities of life with clarity and purpose. This is a continuous process, and every step you take brings you closer to your true self.</p>\n<p>As you embark on this journey, the choices you make today, foster you to who you will be tomorrow. Embrace the journey, and reconnect with the incredible person you have always been.</p>"
+   }
+  }
+ ]
+}
