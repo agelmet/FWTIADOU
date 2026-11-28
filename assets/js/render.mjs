@@ -4,6 +4,7 @@ import { CSS, JS, HEADJS } from './inline.mjs';
 
 const PAGES = {
   home: { el: '', en: 'en/' },
+  me: { el: 'me/', en: 'en/me/' },
   sessions: { el: 'synedries/', en: 'en/sessions/' },
   blog: { el: 'blog/', en: 'en/blog/' },
   privacy: { el: 'aporrito/', en: 'en/privacy/' },
@@ -110,12 +111,13 @@ export function render(state, route, opts = {}) {
     title = strip(tx(`meta.${page}.title`));
     desc = strip(tx(`meta.${page}.desc`));
     if (page === 'sessions') ogImg = 'session-one';
+    if (page === 'me') ogImg = 'home-hero';
   }
 
   // ---- header
   const navA = (pg, k) => `<a href="${link(pg)}"${page === pg || (pg === 'blog' && page === 'post') ? ' aria-current="page"' : ''} data-k="${k}">${tx(k)}</a>`;
   const altPath = page === 'post' ? pathFor('post', o, route.slug) : pathFor(page, o);
-  const flags = `<span class="fl-w"><a class="fl${lang === 'el' ? ' on' : ''}" href="${url(lang === 'el' ? pathFor(page === 'post' ? 'post' : page, 'el', route.slug) : altPath)}" hreflang="el" lang="el" aria-label="Ελληνικά"><span class="fl-b">${FLAG.el}</span></a><a class="fl${lang === 'en' ? ' on' : ''}" href="${url(lang === 'en' ? pathFor(page === 'post' ? 'post' : page, 'en', route.slug) : altPath)}" hreflang="en" lang="en" aria-label="English"><span class="fl-b">${FLAG.en}</span></a></span>`;
+  const flags = `<span class="fl-w"><a class="fl${lang === 'el' ? ' on' : ''}" href="${url(lang === 'el' ? pathFor(page === 'post' ? 'post' : page, 'el', route.slug) : altPath)}" hreflang="el" lang="el" aria-label="Ελληνικά">ΕΛ</a><span class="fl-s" aria-hidden="true">|</span><a class="fl${lang === 'en' ? ' on' : ''}" href="${url(lang === 'en' ? pathFor(page === 'post' ? 'post' : page, 'en', route.slug) : altPath)}" hreflang="en" lang="en" aria-label="English">ENG</a></span>`;
   const musicBtn = S.music ? `<button class="mu" type="button" aria-pressed="false" aria-label="${esc(tx('ui.music'))}" data-src="${esc(asset(S.musicSrc))}"><span class="mu-b"><i></i><i></i><i></i><i></i></span><span class="mu-t" data-k="ui.music">${tx('ui.music')}</span></button>` : '';
   const socials = [S.instagram && `<a href="${esc(S.instagram)}" rel="noopener" target="_blank">Instagram</a>`, S.facebook && `<a href="${esc(S.facebook)}" rel="noopener" target="_blank">Facebook</a>`].filter(Boolean).join('');
   const header = `
@@ -125,13 +127,13 @@ export function render(state, route, opts = {}) {
     <button class="hm" type="button" aria-expanded="false" aria-controls="card" aria-label="${lang === 'el' ? 'Στοιχεία επικοινωνίας' : 'Contact details'}">${mark3d('m3-hd')}</button>
     <a class="hw" href="${link('home')}" aria-label=".mer(made). — ${lang === 'el' ? 'Αρχική' : 'Home'}">${wordmark()}</a>
   </div>
-  <nav class="hn" aria-label="${lang === 'el' ? 'Κύριο μενού' : 'Main menu'}">${navA('home', 'nav.home')}${navA('sessions', 'nav.sessions')}${navA('blog', 'nav.blog')}</nav>
+  <nav class="hn" aria-label="${lang === 'el' ? 'Κύριο μενού' : 'Main menu'}">${navA('home', 'nav.home')}${navA('me', 'nav.me')}${navA('sessions', 'nav.sessions')}${navA('blog', 'nav.blog')}</nav>
   <div class="hd-r">${musicBtn}${flags}<button class="bg" type="button" aria-expanded="false" aria-controls="mn" aria-label="Menu"><i></i><i></i></button></div>
 </header>
 <div class="card" id="card" role="dialog" aria-modal="false" aria-label="${esc(tx('ui.cardtitle'))}">
   <div class="card-in">
     <button class="card-x" type="button" aria-label="${lang === 'el' ? 'Κλείσιμο' : 'Close'}"><i></i><i></i></button>
-    <p class="card-k">.mer(made). · Be you again</p>
+    <p class="card-k"><span class="nc">.mer(made).</span> · Be You Again</p>
     <p class="card-t" data-k="ui.cardtitle">${tx('ui.cardtitle')}</p>
     <p class="card-n" data-k="ui.cardnote">${tx('ui.cardnote')}</p>
     <a class="card-l" href="tel:${tel}"><span>${lang === 'el' ? 'Τηλέφωνο' : 'Phone'}</span><b>${esc(S.phone)}</b></a>
@@ -141,7 +143,7 @@ export function render(state, route, opts = {}) {
   </div>
 </div>
 <div class="mn" id="mn" aria-hidden="true">
-  <nav aria-label="Menu">${navA('home', 'nav.home')}${navA('sessions', 'nav.sessions')}${navA('blog', 'nav.blog')}<a href="#epikoinonia" class="mn-c">${tx('ui.contact')}</a></nav>
+  <nav aria-label="Menu">${navA('home', 'nav.home')}${navA('me', 'nav.me')}${navA('sessions', 'nav.sessions')}${navA('blog', 'nav.blog')}<a href="${page === 'home' || page === 'me' ? '' : link('home')}#epikoinonia" class="mn-c">${tx('ui.contact')}</a></nav>
   <div class="mn-f">${flags}<a href="tel:${tel}">${esc(S.phone)}</a><a href="mailto:${esc(mail)}">${esc(mail)}</a></div>
 </div>`;
 
@@ -180,7 +182,6 @@ export function render(state, route, opts = {}) {
     <p class="kick hx" data-k="h.kick">${tx('h.kick')}</p>
     <h1 class="h1 hx" id="h-t"><span class="sr">.mer(made). — </span><span data-k="h.title">${tx('h.title')}</span></h1>
     ${E('p', 'h.lead', 'lead hx')}
-    <div class="hero-b hx"><a class="btn" href="${link('sessions')}" data-k="h.cta1">${tx('h.cta1')}</a><a class="tl" href="#epikoinonia" data-k="h.cta2">${tx('h.cta2')}</a></div>
   </div>
   <span class="cue" aria-hidden="true"><i></i></span>
 </section>
@@ -204,15 +205,14 @@ export function render(state, route, opts = {}) {
       ${label('02', 's.label')}
       <h2 class="h2 rv" data-rv="up" id="s-t" data-k="s.title">${tx('s.title')}</h2>
       ${E('p', 's.text', 'p rv', 'data-rv="up"')}
-      <ol class="paths rv" data-rv="up">
-        ${[1, 2, 3].map((n) => `<li><a href="${link('sessions')}#x${n}"><span class="paths-n">0${n}</span><span data-k="x${n}.title">${tx(`x${n}.title`)}</span><span class="paths-a" aria-hidden="true">→</span></a></li>`).join('')}
-      </ol>
     </div>
     <figure class="fig stone rv" data-rv="rise" style="aspect-ratio:${ratio('home-sessions')}">${IMG('home-sessions', { sizes: '(max-width: 900px) 92vw, 40vw' })}</figure>
   </div>
-  <div class="wrap quote rv" data-rv="up"><p class="q" data-k="s.quote">${tx('s.quote')}</p><a class="btn" href="${link('sessions')}" data-k="s.cta">${tx('s.cta')}</a></div>
+  <div class="wrap quote rv" data-rv="up"><p class="q" data-k="s.quote">${tx('s.quote')}</p><a class="btn btn-c" href="${link('sessions')}"><span data-k="s.cta">${tx('s.cta')}</span></a></div>
 </section>
 
+
+${contactSection}
 <section class="bya" aria-labelledby="b-t">
   <div class="wrap bya-g">
     <div class="bya-m" aria-hidden="true">${mark3d('m3-big', 5)}<span class="bya-sh"></span></div>
@@ -220,20 +220,28 @@ export function render(state, route, opts = {}) {
       <p class="kick rv" data-rv="up" data-k="b.kick">${tx('b.kick')}</p>
       <h2 class="bya-t rv" data-rv="up" id="b-t" data-k="b.title">${tx('b.title')}</h2>
       ${E('p', 'b.text', 'p rv', 'data-rv="up"')}
-      <ul class="vals">${[1, 2, 3, 4].map((n) => `<li class="rv" data-rv="up" style="--i:${n}"><span class="vals-d" aria-hidden="true"></span><span data-k="b.v${n}">${tx(`b.v${n}`)}</span></li>`).join('')}</ul>
+      <ul class="vals">${[1, 2, 3, 4].map((n) => `<li class="rv" data-rv="up" style="--i:${n}"><svg class="vals-mk" viewBox="0 0 452 490" aria-hidden="true"><use href="#lg-mark"/></svg><span data-k="b.v${n}">${tx(`b.v${n}`)}</span></li>`).join('')}</ul>
     </div>
   </div>
-</section>
-
-${posts.length ? `<section class="sec jr" aria-labelledby="j-t">
-  <div class="wrap">
-    <div class="jr-h">${label('—', 'j.label')}<h2 class="h2 rv" data-rv="up" id="j-t" data-k="j.title">${tx('j.title')}</h2><a class="tl rv" data-rv="up" href="${link('blog')}" data-k="j.all">${tx('j.all')}</a></div>
-    <div class="pcs pcs-${Math.min(posts.length, 2)}">${posts.slice(0, 2).map(postCard).join('')}</div>
+</section>`;
+  } else if (page === 'me') {
+    body = `
+<section class="sh me-h" aria-labelledby="me-t">
+  <div class="wrap sh-g">
+    <div class="sh-x">
+      <p class="kick hx" data-k="me.kick">${tx('me.kick')}</p>
+      <h1 class="h1 me-t hx" id="me-t"><span class="sr">${lang === 'el' ? 'Η ιστορία μου — ' : 'My story — '}</span><span data-k="me.title">${tx('me.title')}</span></h1>
+      ${E('p', 'me.lead', 'lead hx')}
+    </div>
+    <div class="sh-m hx" aria-hidden="true"><span class="sh-sun"></span>${mark3d('m3-big m3-sh', 5)}<span class="bya-sh"></span></div>
   </div>
-</section>` : ''}
+</section>
+<section class="sec me-b" aria-label="${lang === 'el' ? 'Η ιστορία μου' : 'My story'}">
+  <div class="wrap me-w"><div class="prose me-tx rv" data-rv="up" data-k="me.text">${tx('me.text') || `<p class="me-ph">${lang === 'el' ? 'Εδώ θα μπει το κείμενό σου για το .ME. — η ιστορία σου και η επαγγελματική σου πορεία.' : 'Your .ME. text goes here — your story and your professional path.'}</p>`}</div></div>
+</section>
 ${contactSection}`;
   } else if (page === 'sessions') {
-    const ses = [['x1', 'session-one'], ['x2', 'session-story'], ['x3', 'session-multi']];
+    const ses = [['x2', 'session-story'], ['x1', 'session-one'], ['x3', 'session-multi']];
     body = `
 <section class="sh" aria-labelledby="sp-t">
   <div class="wrap sh-g">
@@ -272,7 +280,7 @@ ${contactSection}`;
     </div>
     <form class="cmp rv" data-rv="up" data-mail="${esc(mail)}" novalidate>
       <fieldset class="chips"><legend class="sr">${esc(strip(tx('sp.paths')))}</legend>
-        ${[1, 2, 3].map((n) => `<label class="chip"><input type="radio" name="path" value="${esc(strip(tx(`x${n}.en`)))}"${n === 1 ? ' checked' : ''}><span><b>0${n}</b> ${tx(`x${n}.title`)}</span></label>`).join('')}
+        ${ses.map(([k], i) => `<label class="chip"><input type="radio" name="path" value="${esc(strip(tx(`${k}.en`)))}"${i === 0 ? ' checked' : ''}><span><b>0${i + 1}</b> ${tx(`${k}.title`)}</span></label>`).join('')}
         <label class="chip"><input type="radio" name="path" value="${esc(strip(tx('hc.any')))}"><span data-k="hc.any">${tx('hc.any')}</span></label>
       </fieldset>
       <label class="fld"><span data-k="hc.name">${tx('hc.name')}</span><input name="name" autocomplete="name"></label>
@@ -330,8 +338,8 @@ ${contactSection}`;
       <svg class="ft-mk" viewBox="0 0 452 490" aria-hidden="true"><use href="#lg-mark"/></svg>${wordmark('ft-wm')}${tagline('ft-tg')}
     </a>
     <p class="ft-tag"><span>.mer(made).</span> <span data-k="f.tag">${tx('f.tag')}</span></p>
-    <nav class="ft-n" aria-label="Footer">${navA('home', 'nav.home')}${navA('sessions', 'nav.sessions')}${navA('blog', 'nav.blog')}</nav>
-    <p class="ft-c"><a href="tel:${tel}">${esc(S.phone)}</a><span aria-hidden="true">·</span><a href="mailto:${esc(mail)}">${esc(mail)}</a>${socials ? `<span aria-hidden="true">·</span>${socials}` : ''}</p>
+    <p class="ft-c"><a href="tel:${tel}">${esc(S.phone)}</a><span aria-hidden="true">·</span><a href="mailto:${esc(mail)}">${esc(mail)}</a></p>
+    ${S.instagram || S.facebook ? `<p class="ft-so">${S.instagram ? `<a class="ft-ig" href="${esc(S.instagram)}" rel="noopener" target="_blank" aria-label="Instagram — @${esc((S.instagram.match(/instagram\.com\/([^/?#]+)/) || [, ''])[1])}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle class="ft-igd" cx="17.4" cy="6.6" r="1.1"/></svg><span>@${esc((S.instagram.match(/instagram\.com\/([^/?#]+)/) || [, ''])[1])}</span></a>` : ''}${S.facebook ? `<a href="${esc(S.facebook)}" rel="noopener" target="_blank">Facebook</a>` : ''}</p>` : ''}
     <p class="ft-s">© 2026 .mer(made). <span data-k="f.rights">${tx('f.rights')}</span> · <a href="${link('privacy')}">${lang === 'el' ? 'Απόρρητο &amp; cookies' : 'Privacy &amp; cookies'}</a> · <a class="ft-adv" href="https://advonmedia.com" rel="noopener" target="_blank">Designed by <b class="adv">Advon Media</b></a></p>
   </div>
 </footer>

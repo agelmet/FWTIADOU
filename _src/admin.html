@@ -135,7 +135,7 @@ function loginView(err) {
 }
 
 // ---------- shell ----------
-const TABS = [['home', 'Αρχική'], ['sessions', 'Συνεδρίες'], ['blog', 'Σελίδα Blog'], ['posts', 'Άρθρα'], ['settings', 'Στοιχεία & ρυθμίσεις']];
+const TABS = [['home', 'Αρχική'], ['me', '.ME.'], ['sessions', 'Συνεδρίες'], ['blog', 'Σελίδα Blog'], ['posts', 'Άρθρα'], ['settings', 'Στοιχεία & ρυθμίσεις']];
 function shell() {
   app.innerHTML = `${TRIAL ? '<div class="trialbar">Δοκιμαστική λειτουργία: οι αλλαγές αποθηκεύονται μόνο σε αυτόν τον υπολογιστή. Μόλις η σελίδα βγει live, θα δημοσιεύονται κανονικά.</div>' : ''}
   <div class="top"><span class="brand">.mer(made).<small>Πίνακας</small></span>
@@ -151,7 +151,7 @@ function shell() {
   paintDirty(); view();
 }
 function view() {
-  if (['home', 'sessions', 'blog'].includes(tab)) pageView();
+  if (['home', 'me', 'sessions', 'blog'].includes(tab)) pageView();
   else if (tab === 'posts') editingPost ? postEditor() : postsList();
   else settingsView();
 }
@@ -342,7 +342,7 @@ function settingsView() {
   <div class="row"><button class="b" id="mUp" ${TRIAL ? 'disabled' : ''}>Ανέβασμα δικού σας κομματιού (mp3, έως 5 MB)</button><button class="b" id="mDef">Επαναφορά της αρχικής μουσικής</button></div>
   <p class="note">Η μουσική ξεκινά μόνο όταν ο επισκέπτης πατήσει το κουμπί και σβήνει με ένα πάτημα. ${TRIAL ? 'Το ανέβασμα δικού σας κομματιού ενεργοποιείται μόλις η σελίδα βγει live.' : 'Χρησιμοποιήστε μόνο μουσική που έχετε δικαίωμα να βάλετε σε ιστοσελίδα.'}</p></div>
   <div class="card"><h2 style="margin:0 0 6px;font:300 30px 'NSD',serif">Για το Google (${lang === 'el' ? 'ελληνικά' : 'αγγλικά'})</h2><p class="note" style="margin:0 0 14px">Ο τίτλος και η περιγραφή που δείχνει το Google για κάθε σελίδα.</p>
-  ${['home', 'sessions', 'blog'].map((pg) => `<label class="f"><span>${{ home: 'Αρχική', sessions: 'Συνεδρίες', blog: 'Blog' }[pg]} — τίτλος</span><input type="text" data-t="meta.${pg}.title" value="${esc(T('meta.' + pg + '.title'))}"></label><label class="f"><span>${{ home: 'Αρχική', sessions: 'Συνεδρίες', blog: 'Blog' }[pg]} — περιγραφή</span><textarea rows="2" data-t="meta.${pg}.desc">${esc(T('meta.' + pg + '.desc'))}</textarea></label>`).join('')}</div>`;
+  ${['home', 'me', 'sessions', 'blog'].map((pg) => `<label class="f"><span>${{ home: 'Αρχική', me: '.ME.', sessions: 'Συνεδρίες', blog: 'Blog' }[pg]} — τίτλος</span><input type="text" data-t="meta.${pg}.title" value="${esc(T('meta.' + pg + '.title'))}"></label><label class="f"><span>${{ home: 'Αρχική', me: '.ME.', sessions: 'Συνεδρίες', blog: 'Blog' }[pg]} — περιγραφή</span><textarea rows="2" data-t="meta.${pg}.desc">${esc(T('meta.' + pg + '.desc'))}</textarea></label>`).join('')}</div>`;
   $('#main').querySelectorAll('[data-s]').forEach((i) => i.addEventListener('input', () => { S[i.dataset.s] = i.value.trim(); keepDraft(); }));
   $('#main').querySelectorAll('[data-t]').forEach((i) => i.addEventListener('input', () => { state.t[i.dataset.t][lang] = esc(i.value.trim()); keepDraft(); }));
   $('#mOn').onchange = (e) => { S.music = e.target.checked; keepDraft(); };

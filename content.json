@@ -4,7 +4,7 @@
  "settings": {
   "phone": "+30 693 275 0467",
   "email": "themermade@yahoo.com",
-  "instagram": "",
+  "instagram": "https://www.instagram.com/mermade2026/",
   "facebook": "",
   "music": true,
   "musicSrc": "assets/audio/mermade-ambient.mp3",
@@ -36,11 +36,11 @@
    "en": "Writing by .mer(made). on self-awareness, reflection and returning to your authentic self."
   },
   "nav.home": {
-   "el": "Αρχική",
+   "el": "Home",
    "en": "Home"
   },
   "nav.sessions": {
-   "el": "Συνεδρίες",
+   "el": "Sessions",
    "en": "Sessions"
   },
   "nav.blog": {
@@ -48,8 +48,8 @@
    "en": "Blog"
   },
   "ui.contact": {
-   "el": "Επικοινωνία",
-   "en": "Contact"
+   "el": "Σύνδεση",
+   "en": "Connect"
   },
   "ui.call": {
    "el": "Τηλεφώνησέ μου",
@@ -68,12 +68,12 @@
    "en": "Write to me or call me — I will answer personally."
   },
   "ui.music": {
-   "el": "Μουσική",
+   "el": "Music",
    "en": "Music"
   },
   "h.kick": {
-   "el": "Μια επιστροφή στον εαυτό",
-   "en": "A return to self"
+   "el": "Επιστροφή στον Εαυτό",
+   "en": "Return to Self"
   },
   "h.title": {
    "el": "Γύρνα σε αυτό <em>που είσαι</em>",
@@ -83,20 +83,12 @@
    "el": "Κάτω από όλα όσα έμαθες να είσαι, υπάρχει αυτό που πάντα ήσουν. Ένας χώρος για να σε συναντήσεις ξανά.",
    "en": "Beneath everything you learned to be, there is who you always were. A space to meet yourself again."
   },
-  "h.cta1": {
-   "el": "Ανακάλυψε τις συνεδρίες",
-   "en": "Discover the sessions"
-  },
-  "h.cta2": {
-   "el": "Επικοινωνία",
-   "en": "Get in touch"
-  },
   "i.label": {
    "el": "Η πρόθεση",
    "en": "The Intention"
   },
   "i.title": {
-   "el": "Δεν γεννήθηκες για να γίνεις <em>κάποιος άλλος</em>",
+   "el": "Δε γεννήθηκες για να γίνεις <em>κάποιος άλλος</em>",
    "en": "You were never meant to become <em>someone else</em>"
   },
   "i.text": {
@@ -120,16 +112,16 @@
    "en": "Perhaps it’s time to meet yourself again"
   },
   "s.cta": {
-   "el": "Ανακάλυψε τις συνεδρίες .mer(made).",
-   "en": "Discover the .mer(made). sessions"
+   "el": "Ανακάλυψε τις συνεδρίες <span class=\"nc\">.mer(made).</span>",
+   "en": "Discover the <span class=\"nc\">.mer(made).</span> sessions"
   },
   "b.kick": {
    "el": "Ο στόχος των συνεδριών",
    "en": "What the sessions are for"
   },
   "b.title": {
-   "el": "Be you <em>again.</em>",
-   "en": "Be you <em>again.</em>"
+   "el": "Be You <em>Again</em>",
+   "en": "Be You <em>Again</em>"
   },
   "b.text": {
    "el": "Μια καθοδήγηση για να ορίσουμε καθαρά πού είμαστε τώρα, πού θέλουμε να πάμε και τελικά ποια διαδρομή θα ακολουθήσουμε προκειμένου να επιτευχθεί ο στόχος.",
@@ -152,16 +144,16 @@
    "en": "Love"
   },
   "c.label": {
-   "el": "Επικοινωνία",
-   "en": "Contact"
+   "el": "Σύνδεση",
+   "en": "Connect"
   },
   "c.title": {
    "el": "Πες μου πώς μπορώ να σε <em>συνοδεύσω</em> στη διαδρομή σου.",
    "en": "Please let me know how I can help you <em>on your journey.</em>"
   },
   "c.text": {
-   "el": "Γράψε μου λίγα λόγια για το πού βρίσκεσαι τώρα και τι αναζητάς. Θα σου απαντήσω προσωπικά.",
-   "en": "Write me a few words about where you are now and what you are looking for. I will answer you personally."
+   "el": "Μοιράσου μαζί μου το πού βρίσκεσαι τώρα και τι αναζητάς. Θα σου απαντήσω προσωπικά.",
+   "en": "Share with me where you are now and what you are looking for. I will answer you personally."
   },
   "j.label": {
    "el": "Ημερολόγιο",
@@ -180,8 +172,8 @@
    "en": "Read"
   },
   "f.tag": {
-   "el": "Μια επιστροφή στον αυθεντικό σου εαυτό.",
-   "en": "A return to your authentic self."
+   "el": "Επιστροφή στον αυθεντικό σου εαυτό.",
+   "en": "Return to your authentic self."
   },
   "f.rights": {
    "el": "Με την επιφύλαξη παντός δικαιώματος.",
@@ -334,6 +326,34 @@
   "po.cta": {
    "el": "Θέλεις να το συζητήσουμε;",
    "en": "Would you like to talk about it?"
+  },
+  "nav.me": {
+   "el": ".me.",
+   "en": ".me."
+  },
+  "me.kick": {
+   "el": "Η ιστορία μου",
+   "en": "My story"
+  },
+  "me.title": {
+   "el": ".me.",
+   "en": ".me."
+  },
+  "me.lead": {
+   "el": "Πριν μοιραστείς τη δική σου ιστορία, σου λέω τη δική μου.",
+   "en": "Before you share your story, let me tell you mine."
+  },
+  "me.text": {
+   "el": "",
+   "en": ""
+  },
+  "meta.me.title": {
+   "el": ".me. | .mer(made). — Η ιστορία μου",
+   "en": ".me. | .mer(made). — My story"
+  },
+  "meta.me.desc": {
+   "el": "Η ιστορία και η επαγγελματική πορεία πίσω από το .mer(made). — Be You Again.",
+   "en": "The story and professional path behind .mer(made). — Be You Again."
   }
  },
  "img": {

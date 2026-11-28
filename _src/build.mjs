@@ -13,7 +13,7 @@ for (const f of ['render.mjs', 'logo.mjs', 'inline.mjs']) fs.copyFileSync(SRC + 
 const { render, routes, sitemap } = await import(SRC + '/render.mjs?' + Date.now());
 const state = JSON.parse(fs.readFileSync(OUT + '/content.json', 'utf8'));
 // remove old built pages (only folders we own)
-for (const dir of ['en', 'synedries', 'blog', 'aporrito']) fs.rmSync(OUT + '/' + dir, { recursive: true, force: true });
+for (const dir of ['en', 'me', 'synedries', 'blog', 'aporrito']) fs.rmSync(OUT + '/' + dir, { recursive: true, force: true });
 let n = 0;
 for (const r of routes(state)) {
   const html = render(state, r, { base: BASE });
